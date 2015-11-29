@@ -20,7 +20,8 @@ If a digit does not fit, it returns `?` for that digit.
 ## Running tests
     go test 'github.com/roymiloh/AsciiArt' -v --run=Test
 
-There's also an example test (`--run=Example`)
+There's also an example test (`--run=Example`)<br />
+[Code Coverage](http://gocover.io/github.com/roymiloh/AsciiArt)
 
 ## Configurations
 For another mapping of numbers, you should fork it and change it internally, at least until next versions.
