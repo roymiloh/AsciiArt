@@ -5,6 +5,7 @@ import (
     "bufio"
     "strings"
     "io"
+    "fmt"
 )
 
 func ExampleWriter_Write() {
@@ -35,7 +36,7 @@ func ExampleWriter_Write() {
 
         for record := range chRec {
             recCount += 1
-            record.Write(wr)
+            fmt.Fprintln(wr, record.String())
 
             if recCount % flushRate == 0 {
                 wr.Flush()
